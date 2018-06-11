@@ -13,6 +13,8 @@ describe "A grid of cells" do
   end
 
   it 'exposes a collection of cells' do
+    #with more time, use custom matcher:
+    #expect(grid).to expose_collection_of_cells
     expect(grid).to have_cells
   end
 
