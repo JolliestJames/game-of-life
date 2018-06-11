@@ -10,11 +10,11 @@ class Cell
   end
   
   def dead?
-    true
+    @alive ? false : true
   end
 
   def die
-
+    @alive = false
   end
 
 end
