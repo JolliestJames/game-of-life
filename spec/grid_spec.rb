@@ -1,7 +1,7 @@
 require_relative '../lib/grid'
 
 describe "A grid of cells" do
-  let(:grid) { Grid.new }
+  let(:grid) { Grid.new(3, 3) }
 
   it 'exists' do
     Grid.new
