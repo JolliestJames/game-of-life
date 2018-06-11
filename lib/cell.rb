@@ -8,5 +8,13 @@ class Cell
   def alive?
     @alive
   end
+  
+  def dead?
+    true
+  end
+
+  def die
+
+  end
 
 end
