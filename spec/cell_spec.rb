@@ -16,8 +16,8 @@ describe "A cell" do
     expect(cell).to be_dead
   end
 
-  xit 'has neighbors, which is initially an empty array' do
-
+  it 'has neighbors, which is initially an empty array' do
+    expect(cell.neighbors).to be_empty
   end
 
   xit 'has a tick method' do
