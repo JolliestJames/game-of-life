@@ -12,8 +12,8 @@ describe "A grid of cells" do
     expect(grid.width).not_to be_nil
   end
 
-  xit 'exposes a collection of cells' do
-
+  it 'exposes a collection of cells' do
+    expect(grid).to have_cells
   end
 
   xit 'has a tick method' do
