@@ -31,8 +31,11 @@ describe "A cell" do
       expect(cell).to be_dead
     end
 
-    xit 'a dead cell with fewer than two live neighbors stays dead' do
-
+    it 'a dead cell with fewer than two live neighbors stays dead' do
+      cell.tick
+      expect(cell).to be_dead
+      cell.tick
+      expect(cell).to be_dead
     end
 
     # TODO: Cell rules
