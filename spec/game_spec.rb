@@ -20,9 +20,8 @@ describe "Conway's game of life" do
   end
 
   it 'the tick method changes the state of the grid' do
-    game_grid_before_state_change = game.grid
     game.tick
-    expect(game.grid).not_to eq(game_grid_before_state_change)
+    expect(game.grid).not_to eq(game.original_grid)
   end
 
 end

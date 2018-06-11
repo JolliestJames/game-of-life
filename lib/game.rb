@@ -3,10 +3,11 @@ class Game
 
   def initialize
     @grid = []
-    @original_grid = grid
+    @original_grid = grid.dup
   end
 
   def tick
+    @grid << "A change in state"
   end
 
 end
