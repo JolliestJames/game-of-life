@@ -19,7 +19,9 @@ class Cell
   end
 
   def tick
-
+    unless @neighbors.length >= 2
+      @alive = false
+    end
   end
 
 end
