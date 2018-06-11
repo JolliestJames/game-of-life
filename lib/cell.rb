@@ -1,8 +1,9 @@
 class Cell
-  attr_accessor :alive
+  attr_accessor :alive, :neighbors
 
   def initialize
     @alive = true
+    @neighbors = []
   end
 
   def alive?
