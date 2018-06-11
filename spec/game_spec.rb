@@ -11,8 +11,8 @@ describe "Conway's game of life" do
     expect(game.grid).not_to be_nil
   end
 
-  xit 'provides a way to obtain the grid it was instantiated with' do
-
+  it 'provides a way to obtain the grid it was instantiated with' do
+    expect(game.original_grid).to eq([])
   end
 
   xit 'has a tick method' do
