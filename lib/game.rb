@@ -6,4 +6,7 @@ class Game
     @original_grid = grid
   end
 
+  def tick
+  end
+
 end
